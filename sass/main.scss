@@ -1,0 +1,59 @@
+$azul:#03071E;
+$naranja:#DC2F02;
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Jura:wght@500&family=Playfair+Display:wght@500&family=Roboto+Condensed:wght@300&display=swap');
+
+@mixin borde {
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    background-color: $azul;
+    color: $naranja;
+
+    .titulo{
+        font-size: 4.8rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: right;
+        list-style: none;
+    
+        .menu__div{
+            width: 45%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            padding-bottom: 1rem;
+        
+            .list__item{
+                color: $naranja;
+                font-size: 1.3rem;
+                
+                &:hover{
+                    opacity: .75;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
