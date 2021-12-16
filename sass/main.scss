@@ -1,10 +1,11 @@
 $azul:#03071E;
-$naranja:#DC2F02;
+$fucsia: #d90429;
 
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Jura:wght@500&family=Playfair+Display:wght@500&family=Roboto+Condensed:wght@300&display=swap');
 
 @mixin borde {
-    
+    border: 0.3rem solid $azul;
+    border-radius: 1rem;
 }
 
 *{
@@ -12,6 +13,11 @@ $naranja:#DC2F02;
     margin: 0;
     box-sizing: border-box;
     font-family: 'ABeeZee', sans-serif;
+
+}
+
+body{
+    overflow: hidden;
 }
 
 a{
@@ -20,12 +26,12 @@ a{
 
 header {
     background-color: $azul;
-    color: $naranja;
+    color: $fucsia;
 
     .titulo{
         font-size: 4.8rem;
         padding-top: 2rem;
-        padding-left: 2rem;
+        margin-left: 3rem;
     }
     
     .menu{
@@ -33,20 +39,24 @@ header {
         justify-content: right;
         list-style: none;
     
-        .menu__div{
+        .menu__list{
             width: 45%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             list-style: none;
             padding-bottom: 1rem;
-        
+            
             .list__item{
-                color: $naranja;
+                color: $fucsia;
                 font-size: 1.3rem;
                 
                 &:hover{
                     opacity: .75;
+                }
+
+                .menu__icon{
+                    padding-right: 0.5rem;
                 }
             }
         }
@@ -54,6 +64,45 @@ header {
 }
 
 
+.index__seccion{
+    padding: 16.6%;
+    background-image: url(../imagenes/cinefondo.jpg);
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+
+    .index__boton{
+        padding: 2rem;
+        @include borde;
+        background-color: $fucsia;
+        color: $azul;
+
+        &:hover{
+            background-color: #EF233C;
+        }
+    }
+}
+
+
+
+.footer{
+    background-color: $azul;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+
+    .redes__icon{
+        color: $fucsia;
+        font-size: 2.8rem;
+        padding: .5rem;
+
+        &:hover{
+            font-size: 4rem;
+            padding: 0 1rem;
+        }
+    }
+}
 
 
 
