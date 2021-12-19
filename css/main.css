@@ -109,7 +109,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    height: 40rem;
+    height: 45rem;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -153,6 +153,11 @@ a {
   }
   .header .menu .menu__list .list__item {
     font-size: 1.4rem;
+  }
+
+  .index__seccion .index__boton {
+    padding: 1.8rem 2rem;
+    font-size: 1.2rem;
   }
 }
 
