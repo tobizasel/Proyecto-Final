@@ -1,7 +1,7 @@
 $azul:#03071E;
 $fucsia: #d90429;
 $bordo:#9D0208;
-
+@import "contacto";
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Jura:wght@500&family=Playfair+Display:wght@500&family=Roboto+Condensed:wght@300&display=swap');
 
 @mixin borde {
@@ -19,6 +19,7 @@ $bordo:#9D0208;
 
 a{
     text-decoration: none;
+    display: inline-block;
 }
     
     .header{
@@ -31,6 +32,10 @@ a{
 
         .titulo{
             padding: 2rem;    
+            color: $fucsia;
+        }
+        
+        #color__titulo{
             color: $fucsia;
         }
 
@@ -212,7 +217,5 @@ a{
             }
         
         }
-    
     }
-        
         

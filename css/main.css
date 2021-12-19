@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Jura:wght@500&family=Playfair+Display:wght@500&family=Roboto+Condensed:wght@300&display=swap");
+.seccion__contacto {
+  display: flex;
+  justify-content: flex-end;
+}
+.seccion__contacto .form {
+  display: flex;
+  flex-direction: column;
+  border: 0.3rem solid #03071E;
+  border-radius: 0.8rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-right: 20rem;
+  width: 25%;
+  height: 35rem;
+  align-items: center;
+  justify-content: space-around;
+  color: #d90429;
+  background-color: #03071E;
+}
+.seccion__contacto .form .form__titulo {
+  font-size: 2rem;
+}
+.seccion__contacto .form .form__pregunta {
+  width: 80%;
+  padding: 0.8rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +35,7 @@
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 .header {
@@ -19,6 +47,9 @@ a {
 }
 .header .titulo {
   padding: 2rem;
+  color: #d90429;
+}
+.header #color__titulo {
   color: #d90429;
 }
 .header .menu {
