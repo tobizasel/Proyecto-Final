@@ -24,7 +24,7 @@
                     <li class="list__item"><i class="fas fa-dollar-sign menu__icon"></i>Donar</li>
                 </a>
                 <a href="../pages/contacto.html">
-                    <li class="list__item"><i class="fas fa-address-card menu__icon"></i>Contacto</li>
+                    <li class="list__item"><i class="far fa-envelope menu__icon"></i>Contacto</li>
                 </a>
             </ul>
         </nav>
@@ -32,23 +32,34 @@
     
     <section class="seccion__contacto">
         
-        <form action="" method="post" class="form">
+        
+            <form action="" method="post" class="form">
 
-            <h2 class="form__titulo">Contactanos!</h2>
+                <h2 class="form__titulo">Contactanos!</h2>
 
-            <label for="nombre"></label>
-            <input type="text" name="nombre" placeholder="Escribe tu nombre" class="form__pregunta">
+                <div class="form__preguntas">     
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" placeholder="Escribe tu nombre" class="form__pregunta">
 
-            <label for="apellido"></label>
-            <input type="text" name="apellido" placeholder="Escribe tu apellido" class="form__pregunta">
+                    <label for="apellido"></label>
+                    <input type="text" name="apellido" placeholder="Escribe tu apellido" class="form__pregunta">
 
-            <label for="telefono"></label>
-            <input type="number" name="telefono" placeholder="Escribe tu numero telefonico" class="form__pregunta">
+                    <label for="mail"></label>
+                    <input type="email" name="mail" placeholder="Escribe tu correo electronico" class="form__pregunta">
 
-            <h3>Tu comentario:</h3>
-            <textarea name="comentario" cols="30" rows="10"></textarea>
+                    <label for="telefono"></label>
+                    <input type="tel" name="telefono" placeholder="Escribe tu numero telefonico" class="form__pregunta">
+                </div>
+                
+                <div class="form__container--comentario">
+                    <h3>Tu comentario:</h3>
+                    <textarea name="comentario" class="form__comentario"></textarea>
+                </div>
 
-
+                <div class="form__botones">
+                    <input type="submit" value="Enviar" class="form__boton">
+                    <input type="reset" value="Eliminar" class="form__boton">
+                </div>
 
         </form>
 

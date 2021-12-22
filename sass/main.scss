@@ -59,7 +59,7 @@ a{
                     }
 
                     &:hover{
-                        opacity: .75;
+                        text-decoration: underline;
                     }
                 }
             }
@@ -102,7 +102,6 @@ a{
     }
 
     .footer{
-        width: 100%;
         background-color: $azul;
         display: flex;
         justify-content: center;
