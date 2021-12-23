@@ -5,13 +5,17 @@
 }
 
 
-.seccion__contacto{
-    display: flex;
-    justify-content: flex-end;
+.seccion{
     background-image: url(../imagenes/cinefondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.seccion__contacto{
+    display: flex;
+    justify-content: flex-end;
+    
     
 
     .form{
@@ -69,7 +73,7 @@
         .form__botones{
 
 
-            .form__boton{
+            .form__boton--enviar{
                 padding: .5rem 1rem;
                 cursor: pointer;
                 background-color: $azul;
@@ -78,6 +82,10 @@
                 color: $fucsia;
                 margin: 0 1rem;
                 margin-bottom: 2rem;
+            }
+
+            .form__boton--borrar{
+                @extend .form__boton--enviar;
             }
         }
 
@@ -101,10 +109,6 @@
 
         .form{
             padding: 0rem;
-
-            
-
-
         }
     }
     

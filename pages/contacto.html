@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cine Review || Contacto</title>
+    <meta name="keywords" content="review cine pelicula reseña serie estrenos netflix
+    cinefilo contacto">
+    <meta name="description" content="Si tenes alguna queja o alguna correccion de nuestras reviews, completa este formulario y contactanos">
     <script src="https://kit.fontawesome.com/a7be0a9ac0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -30,7 +33,7 @@
         </nav>
     </header>
     
-    <section class="seccion__contacto">
+    <section class="seccion__contacto seccion"> 
         
         
             <form action="" method="post" class="form">
@@ -39,16 +42,16 @@
 
                 <div class="form__preguntas">     
                     <label for="nombre"></label>
-                    <input type="text" name="nombre" placeholder="Escribe tu nombre" class="form__pregunta">
+                    <input type="text" name="nombre" placeholder="Escribe tu nombre" required class="form__pregunta">
 
                     <label for="apellido"></label>
-                    <input type="text" name="apellido" placeholder="Escribe tu apellido" class="form__pregunta">
+                    <input type="text" name="apellido" placeholder="Escribe tu apellido" required class="form__pregunta">
 
                     <label for="mail"></label>
-                    <input type="email" name="mail" placeholder="Escribe tu correo electronico" class="form__pregunta">
+                    <input type="email" name="mail" placeholder="Escribe tu correo electronico" required class="form__pregunta">
 
                     <label for="telefono"></label>
-                    <input type="tel" name="telefono" placeholder="Escribe tu numero telefonico" class="form__pregunta">
+                    <input type="tel" name="telefono" placeholder="Escribe tu numero telefonico" required class="form__pregunta">
                 </div>
                 
                 <div class="form__container--comentario">
@@ -57,8 +60,8 @@
                 </div>
 
                 <div class="form__botones">
-                    <input type="submit" value="Enviar" class="form__boton">
-                    <input type="reset" value="Eliminar" class="form__boton">
+                    <input type="submit" value="Enviar" class="form__boton--enviar">
+                    <input type="reset" value="Borrar" class="form__boton--borrar">
                 </div>
 
         </form>

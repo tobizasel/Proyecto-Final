@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Jura:wght@500&family=Playfair+Display:wght@500&family=Roboto+Condensed:wght@300&display=swap");
-.seccion__contacto {
-  display: flex;
-  justify-content: flex-end;
+.seccion {
   background-image: url(../imagenes/cinefondo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.seccion__contacto {
+  display: flex;
+  justify-content: flex-end;
 }
 .seccion__contacto .form {
   display: flex;
@@ -52,7 +55,7 @@
   padding: 0.8rem;
   outline: none;
 }
-.seccion__contacto .form .form__botones .form__boton {
+.seccion__contacto .form .form__botones .form__boton--enviar, .seccion__contacto .form .form__botones .form__boton--borrar {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background-color: #03071E;
@@ -62,7 +65,6 @@
   margin: 0 1rem;
   margin-bottom: 2rem;
 }
-
 @media screen and (max-width: 1000px) {
   .seccion__contacto {
     display: flex;
@@ -75,6 +77,75 @@
 @media screen and (max-width: 480px) {
   .seccion__contacto .form {
     padding: 0rem;
+  }
+}
+.seccion__donar {
+  display: flex;
+  justify-content: flex-end;
+}
+.seccion__donar .donar__articulo {
+  border: 0.3rem solid #03071E;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-right: 15rem;
+}
+.seccion__donar .donar__articulo .donar__titulos {
+  margin-bottom: 15rem;
+  text-align: center;
+}
+.seccion__donar .donar__articulo .donar__titulos .donar__titulo {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+.seccion__donar .donar__articulo .donar__titulos .donar__subtitulo {
+  font-size: 1.5rem;
+}
+.seccion__donar .donar__articulo .donar__parrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.seccion__donar .donar__articulo .donar__parrafo .donar__texto {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.seccion__donar .donar__articulo .donar__parrafo .donar__icono {
+  font-size: 4rem;
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .seccion__donar {
+    justify-content: center;
+    background-color: #9D0208;
+    background-image: none;
+    padding: 3rem;
+  }
+  .seccion__donar .donar__articulo {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .seccion__donar .donar__articulo {
+    padding: 1rem;
+  }
+  .seccion__donar .donar__articulo .donar__titulos .donar__titulo {
+    font-size: 1.8rem;
+  }
+  .seccion__donar .donar__articulo .donar__titulos .donar__subtitulo {
+    font-size: 1.2rem;
+  }
+  .seccion__donar .donar__articulo .donar__parrafo .donar__texto {
+    font-size: 1.2rem;
+  }
+  .seccion__donar .donar__articulo .donar__parrafo .donar__icono {
+    font-size: 3rem;
   }
 }
 * {
