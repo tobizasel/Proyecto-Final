@@ -91,3 +91,20 @@
     }
     
 }
+
+// Pagina de historia
+
+#historia__articulo--margen{
+    margin-right: 5rem;
+}
+
+.historia__articulo{
+    max-width: 30rem;
+    @extend .donar__articulo;
+    
+
+    .historia__titulos{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
