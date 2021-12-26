@@ -189,7 +189,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #9D0208;
+  background: #d90429;
 }
 .masvistas__seccion .masvistas__titulo {
   font-size: 3rem;
@@ -208,7 +208,7 @@
   margin-right: 2.5rem;
   margin-left: 2rem;
   padding: 0.6rem 1rem;
-  background-color: #d90429;
+  background-color: #E71D36;
   border: 0.3rem solid #03071E;
   border-radius: 0.8rem;
 }
@@ -290,15 +290,16 @@
 .seccion__review {
   display: flex;
   flex-direction: column;
+  background: #d90429;
 }
 .seccion__review .review__titulo {
   align-self: center;
-  padding: 3rem;
+  padding: 3.5rem;
   font-size: 3rem;
 }
 .seccion__review .review__articulos {
   display: grid;
-  grid-template-areas: "trailer valoracion" "review datos";
+  grid-template-areas: "trailer valoracion" "review datos" "review ver";
   grid-template-columns: 5fr 4fr;
   row-gap: 5rem;
 }
@@ -310,23 +311,125 @@
 .seccion__review .review__articulos .review__trailer {
   grid-area: trailer;
 }
+.seccion__review .review__articulos .review__trailer .review__trailer--video {
+  width: 35rem;
+  height: 20rem;
+}
 .seccion__review .review__articulos .review__review {
   grid-area: review;
   margin: 0 5rem;
   text-align: center;
   padding: 4rem;
   padding-top: 0rem;
+  font-weight: 700;
 }
 .seccion__review .review__articulos .review__review .review__texto {
   padding: 1rem;
 }
 .seccion__review .review__articulos .review__valoracion {
   grid-area: valoracion;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seccion__review .review__articulos .review__valoracion .review__valoracion--container {
+  text-align: center;
+  padding: 2rem;
+  border: 0.3rem solid #03071E;
+  border-radius: 0.8rem;
+}
+.seccion__review .review__articulos .review__valoracion .review__valoracion--container .review__valoracion--titulo {
+  padding: 1rem;
+  font-size: 2.3rem;
+}
+.seccion__review .review__articulos .review__valoracion .review__valoracion--container .review__valoracion--estrellas {
+  color: #F48C06;
+  font-size: 3rem;
 }
 .seccion__review .review__articulos .review__datos {
   grid-area: datos;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.seccion__review .review__articulos .review__datos .review__datos--texto {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+.seccion__review .review__articulos .review__ver {
+  grid-area: ver;
+}
+.seccion__review .review__articulos .review__ver .review__ver--titulo {
+  font-size: 2.3rem;
+  padding: 1rem;
+}
+.seccion__review .review__articulos .review__ver .review__ver--icono {
+  font-size: 3.2rem;
+}
+.seccion__review .review__articulos .review__ver .review__ver--icono:hover {
+  font-size: 4.5rem;
 }
 
+@media screen and (max-width: 1150px) {
+  .seccion__review .review__articulos .review__trailer .review__trailer--video {
+    width: 24rem;
+    height: 16rem;
+  }
+  .seccion__review .review__articulos .review__review {
+    margin: 0;
+  }
+  .seccion__review .review__articulos .review__valoracion .review__valoracion--container {
+    text-align: center;
+    padding: 2rem;
+    border: 0.3rem solid #03071E;
+    border-radius: 0.8rem;
+  }
+  .seccion__review .review__articulos .review__valoracion .review__valoracion--container .review__valoracion--titulo {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  .seccion__review .review__articulos .review__valoracion .review__valoracion--container .review__valoracion--estrellas {
+    color: #F48C06;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .seccion__review {
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion__review .review__titulo {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+  .seccion__review .review__articulos {
+    grid-template-areas: "valoracion valoracion" "trailer trailer" "datos datos" "review review" "ver ver" ". .";
+  }
+  .seccion__review .review__articulos .review__datos {
+    padding: 0 2rem;
+  }
+  .seccion__review .review__articulos .review__review {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .seccion__review .review__articulos .review__trailer .review__trailer--video {
+    width: 17rem;
+    height: 14rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .seccion__review .review__articulos .review__review {
+    padding: 0 2rem;
+  }
+  .seccion__review .review__articulos .review__valoracion .review__valoracion--container {
+    padding: 1.5rem;
+  }
+  .seccion__review .review__articulos .review__valoracion .review__valoracion--container .review__valoracion--estrellas {
+    font-size: 1.5rem;
+  }
+}
 * {
   padding: 0;
   margin: 0;
