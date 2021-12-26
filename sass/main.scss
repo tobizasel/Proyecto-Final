@@ -1,6 +1,6 @@
 $azul:#03071E;
 $fucsia: #d90429;
-$bordo:#9D0208;
+$bordo:#C00021;
 @import "contacto";
 @import "donar";
 @import "masvistas";
@@ -9,7 +9,7 @@ $bordo:#9D0208;
 $colores:(
     "azul": #03071E, 
     "fucsia": #d90429, 
-    "bordo": #9D0208,
+    "bordo": #C00021,
     );
 
 @mixin borde {

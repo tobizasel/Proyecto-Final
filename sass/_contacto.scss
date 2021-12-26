@@ -6,16 +6,16 @@
 
 
 .seccion{
-    background-image: url(../imagenes/cinefondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
 }
 
 .seccion__contacto{
     display: flex;
     justify-content: flex-end;
-    
+    background-image: url(../imagenes/cinefondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
 
     .form{
@@ -102,25 +102,19 @@
     }
 }
 
+
+    
+
+
 @media screen and (max-width:480px) {
     
     .seccion__contacto{
+        background-image: none;
+        background-color: $fucsia;
 
         .form{
             padding: 0rem;
-
-            .form__titulo{
-                margin: 1.5rem 3rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:480px) {
-    
-    .seccion__contacto{
-        .form{
-
+            
             .form__titulo{
                 margin: 1.5rem 1rem;
             }
