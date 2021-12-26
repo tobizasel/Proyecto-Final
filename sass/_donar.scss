@@ -1,6 +1,10 @@
 .seccion__donar{
     display: flex;
     justify-content: flex-end;
+    background-image: url(../imagenes/cinefondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     
     .donar__articulo{
         @include borde;
@@ -49,7 +53,7 @@
 @media screen and (max-width:1200px) {
     .seccion__donar{
         justify-content: center;
-        background-color: $bordo;
+        background-color: $fucsia;
         background-image: none;
         padding: 3rem;
         .donar__articulo{

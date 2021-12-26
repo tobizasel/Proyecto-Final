@@ -91,6 +91,10 @@
 .seccion__donar {
   display: flex;
   justify-content: flex-end;
+  background-image: url(../imagenes/cinefondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .seccion__donar .donar__articulo, .seccion__donar .historia__articulo {
   border: 0.3rem solid #03071E;
@@ -132,7 +136,7 @@
 @media screen and (max-width: 1200px) {
   .seccion__donar {
     justify-content: center;
-    background-color: #C00021;
+    background-color: #d90429;
     background-image: none;
     padding: 3rem;
   }
