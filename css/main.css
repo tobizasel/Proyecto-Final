@@ -206,11 +206,19 @@
 }
 .masvistas__seccion .masvistas__articulo .articulo__titulo {
   margin-right: 2.5rem;
+  text-align: center;
   margin-left: 2rem;
-  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 4rem;
   background-color: #E71D36;
   border: 0.3rem solid #03071E;
   border-radius: 0.8rem;
+}
+.masvistas__seccion .masvistas__articulo #articulo__titulo--cienciaficcion {
+  flex-direction: column;
 }
 .masvistas__seccion .masvistas__articulo .masvistas__imagenes {
   width: 9rem;
