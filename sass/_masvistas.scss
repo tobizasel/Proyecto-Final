@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: $fucsia;
+    background: #d90429ee;
     
+
+
     .masvistas__titulo{
         font-size: 3rem;
         padding: 3rem;
         text-align: center;
+        color: black;
     }
 
     .masvistas__articulo{
@@ -41,6 +44,7 @@
         }
     }
 }
+
 
 @media screen and (max-width:1380px) {
     .masvistas__seccion{
@@ -147,7 +151,7 @@
 .seccion__review{
     display: flex;
     flex-direction: column;
-    background: $fucsia;
+    background-color:#d90429dd ;
 
     .review__titulo{
         align-self: center;
@@ -246,6 +250,32 @@
                 
             }
         }
+
+        .review__ver--flow{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1.5rem;
+
+            &:hover{
+                width: 5rem;
+                height: 5rem;   
+            }
+        }
+
+        .review__ver--disney{
+
+            width: 6.5rem;
+            height: 4rem;
+            border-radius: 1.5rem;
+    
+            &:hover{
+                width: 7rem;
+                height: 5rem;
+                
+            }
+        }
+        
+
     }
 
     }

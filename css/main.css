@@ -189,12 +189,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #d90429;
+  background: #d90429ee;
 }
 .masvistas__seccion .masvistas__titulo {
   font-size: 3rem;
   padding: 3rem;
   text-align: center;
+  color: black;
 }
 .masvistas__seccion .masvistas__articulo {
   display: flex;
@@ -298,7 +299,7 @@
 .seccion__review {
   display: flex;
   flex-direction: column;
-  background: #d90429;
+  background-color: #d90429dd;
 }
 .seccion__review .review__titulo {
   align-self: center;
@@ -377,6 +378,24 @@
 }
 .seccion__review .review__articulos .review__ver .review__ver--icono:hover {
   font-size: 4.5rem;
+}
+.seccion__review .review__articulos .review__ver .review__ver--flow {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+}
+.seccion__review .review__articulos .review__ver .review__ver--flow:hover {
+  width: 5rem;
+  height: 5rem;
+}
+.seccion__review .review__articulos .review__ver .review__ver--disney {
+  width: 6.5rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+}
+.seccion__review .review__articulos .review__ver .review__ver--disney:hover {
+  width: 7rem;
+  height: 5rem;
 }
 
 @media screen and (max-width: 1150px) {
