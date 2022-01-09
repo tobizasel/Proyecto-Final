@@ -508,7 +508,9 @@ a {
   padding-right: 0.5rem;
 }
 .header .menu .menu__list .list__item:hover {
-  text-decoration: underline;
+  color: #EF233C;
+  font-weight: 700;
+  transition-duration: 1;
 }
 
 .index__seccion {
@@ -550,8 +552,7 @@ a {
   padding: 2rem 0.2rem;
 }
 .footer .redes__icon:hover {
-  font-size: 3.5rem;
-  padding: 1 1rem;
+  color: #EF233C;
 }
 
 @media screen and (min-width: 700px) {
@@ -593,10 +594,6 @@ a {
     font-size: 3rem;
     padding: 3rem 0.3rem;
   }
-  .footer .redes__icon:hover {
-    font-size: 4rem;
-    padding: 1rem;
-  }
 }
 @media screen and (min-width: 1200px) {
   * .header {
@@ -625,7 +622,7 @@ a {
     font-size: 1.4rem;
   }
   * .index__seccion .index__boton {
-    padding: 1.8rem 2rem;
+    padding: 1.8rem 2.5rem;
     font-size: 1.2rem;
   }
 }
